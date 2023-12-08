@@ -4,3 +4,36 @@ Project to predict Health Insurance Premium
 3. Add linsense
 4. Create init_setup.sh
 5. execute init_setup.sh commad - bash init_setup.sh
+6. Create template.py (Python script to create project structure)
+
+Project structure
+Components of pipelines :
+1. data ingestion
+2. EDA
+3. Feature engineering
+4. Model building
+5. evaluation
+
+Pipelines (Collection of components):
+1. Training Pipeline
+2. Prediction Pipeline
+
+Other files:
+1. Logger file (to log every information about execution)
+2. exception file
+3. Utils file
+4. setup.py -- to install local packages
+5. requirement.txt
+
+Other folders
+1. Create .github folder under root directory.
+   .github --> workflow -> main.yaml file  (Used for CI/CD pipeline), .gitkeep file (allow us to push empty folder to git )
+2. Notebooks
+3. src / projectName 
+         / Components [dataingestion.py preprocessing.py, modeltraining.py]
+         / Pipelines [training.py, prediction.py]
+         / exeception.py
+         / logger.py
+         / utils.py
+
+                    
