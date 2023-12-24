@@ -22,7 +22,7 @@ class DataIngestion:
         logging.info("data ingestion started")
 
         try:
-            data = pd.read_csv(Path(os.path.join("notebooks/data", "insurance.csv")))
+            data = pd.read_csv(Path(os.path.join("notebooks/data", "data_preprocessed.csv")))
             logging.info('data stored in dataframe')
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
             data.to_csv(self.ingestion_config.raw_data_path,index=False)

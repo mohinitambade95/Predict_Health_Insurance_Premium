@@ -6,7 +6,7 @@ import numpy as np
 from dataclasses import dataclass
 from src.HealthInsurancePremiumPrediction.exception import customexception
 from src.HealthInsurancePremiumPrediction.logger import logging
-
+from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
@@ -42,7 +42,7 @@ class DataTransformation:
             cat_pipeline=Pipeline(
                 steps=[
                     ('onehot',OneHotEncoder(drop='first') )
-                    ('scaler',StandardScaler())
+                    #('scaler',StandardScaler())
                 ]
             )
 
@@ -50,6 +50,8 @@ class DataTransformation:
             ('num_pipeline',num_pipeline,num_cols),
             ('cat_pipeline',cat_pipeline,cat_cols)
             ])
+
+            return preprocessor
 
         except Exception as e:
             logging.info("Exception occured while creating datatransformation pipeline")
