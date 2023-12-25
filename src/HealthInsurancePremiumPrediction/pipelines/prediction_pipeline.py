@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from src.HealthInsurancePremiumPrediction.exception import customexception
 from src.HealthInsurancePremiumPrediction.logger import logging
-from src.HealthInsurancePremiumPrediction.utils import load_object
+from src.HealthInsurancePremiumPrediction.utils.utils import load_object
 
 class PredictPipeline:
     def __init__(self):
@@ -32,7 +32,7 @@ class CustomData:
                  age:int,
                  sex:str,
                  bmi:float,
-                 children:int,
+                 children:str,
                  smoker:str,
                  region:str
                  ):
