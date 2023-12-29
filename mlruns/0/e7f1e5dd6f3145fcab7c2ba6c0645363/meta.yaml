@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Predict_Health_Insurance_Premium/mlruns/0/e7f1e5dd6f3145fcab7c2ba6c0645363/artifacts
+end_time: 1703787364995
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7f1e5dd6f3145fcab7c2ba6c0645363
+run_name: spiffy-hawk-715
+run_uuid: e7f1e5dd6f3145fcab7c2ba6c0645363
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703787345289
+status: 3
+tags: []
+user_id: yashm
