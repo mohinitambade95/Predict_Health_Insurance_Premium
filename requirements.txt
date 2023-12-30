@@ -6,4 +6,6 @@ seaborn
 Flask
 mlflow==2.2.2
 dvc
+pymongo==4.5
+pymongo[srv]
 -e .

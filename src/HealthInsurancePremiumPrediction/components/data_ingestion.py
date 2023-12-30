@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np 
 from src.HealthInsurancePremiumPrediction.logger import logging
 from src.HealthInsurancePremiumPrediction.exception import customexception
-from src.HealthInsurancePremiumPrediction.database_connection import db_connection
+from src.HealthInsurancePremiumPrediction.database_connection import get_data_from_db
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from pathlib import Path
@@ -24,10 +24,10 @@ class DataIngestion:
 
         try:
             #data = pd.read_csv(Path(os.path.join("notebooks/data", "data_preprocessed.csv")))
-            database_name = 'insurance_premium'
-            collection_name = 'data'
+            database_name = 'Insurance'
+            collection_name = 'PreprocessedData'
             data = get_data_from_db(database_name,collection_name)
-            
+            print("Shape of data",data.shape)
             logging.info('data stored in dataframe')
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
@@ -60,3 +60,6 @@ class DataIngestion:
            logging.info("exception occured during data ingestion")
            raise customexception(e,sys)
 
+if __name__ == "__main__":
+    ds = DataIngestion()
+    t,r=ds.initiate_data_ingestion()
