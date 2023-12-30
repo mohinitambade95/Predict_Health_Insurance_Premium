@@ -8,6 +8,7 @@ import pandas as pd
 import os
 import sys
 
+
 obj=DataIngestion()
 train_data_path,test_data_path = obj.initiate_data_ingestion()
 

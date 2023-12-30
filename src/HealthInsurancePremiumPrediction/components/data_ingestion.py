@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np 
 from src.HealthInsurancePremiumPrediction.logger import logging
 from src.HealthInsurancePremiumPrediction.exception import customexception
+from src.HealthInsurancePremiumPrediction.database_connection import db_connection
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from pathlib import Path
@@ -22,8 +23,13 @@ class DataIngestion:
         logging.info("data ingestion started")
 
         try:
-            data = pd.read_csv(Path(os.path.join("notebooks/data", "data_preprocessed.csv")))
+            #data = pd.read_csv(Path(os.path.join("notebooks/data", "data_preprocessed.csv")))
+            database_name = 'insurance_premium'
+            collection_name = 'data'
+            data = get_data_from_db(database_name,collection_name)
+            
             logging.info('data stored in dataframe')
+
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
             data.to_csv(self.ingestion_config.raw_data_path,index=False)
             logging.info("Raw data saved")
@@ -38,11 +44,15 @@ class DataIngestion:
             
             logging.info("data ingestion part completed")
 
+            
+
             return (
 
                 self.ingestion_config.train_data_path,
                 self.ingestion_config.test_data_path
             )
+
+
             
 
 
