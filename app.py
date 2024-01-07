@@ -12,7 +12,8 @@ def home_page():
 @app.route('/predict',methods=["GET","POST"])
 def predict_datapoint():
     if(request.method == "GET"):
-        return render_template("form.html")
+        #return render_template("form.html")
+        return render_template("details.html")
     else:
         data = CustomData(
             age=int(request.form.get('age')),
@@ -33,4 +34,5 @@ def predict_datapoint():
         return render_template("result.html", final_result = result)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8080)
+    #app.run(host="0.0.0.0", port=8080)
+    app.run()

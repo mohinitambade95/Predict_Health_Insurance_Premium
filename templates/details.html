@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Details</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #abecee;
+  background-image: url(/img/transparent-background-pattern-png-);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #283e5a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+  color: #0a0a23;
+}
+
+form {
+  width: 60vh;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #070b11;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #0a0a23;
+  color: #10151B;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background: linear-gradient(rgb(253, 251, 251), rgb(247, 247, 247));
+  border-color: whitesmoke;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 2px 2px 2px 1px;
+}
+
+a {
+  color: #dfdfe2;
+}
+
+footer {
+  padding-bottom: 5em;
+  color: #5a5a74;
+}
+
+    </style>
+</head>
+
+<body>
+        <h1>Premium Calculator</h1>
+        <p>Enter your deails below</p>
+      
+        <form action="{{url_for('predict_datapoint')}}" method="post">
+          <fieldset>
+            <label for="age">Input you age (years):
+              <input type="number" name="age" min="1" max="120" /></label>
+            <label for="bmi">Input you bmi:
+              <input type="number" name="bmi" min="1" max="120" /></label>
+            <label for="sex">Gender :
+      
+              <select name="sex">
+                <option value="">(select one)</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <label for="smoker">Do you smoke ? :
+      
+                <select name="smoker">
+                  <option value="">(select one)</option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                </select>
+            </label>
+
+            <label for="region">Please select your region ? :
+      
+                <select name="region">
+                  <option value="">(select one)</option>
+                  <option value="southwest">southwest</option>
+                  <option value="southeast">southeast</option>
+                  <option value="northwest">northwest</option>
+                  <option value="northeast">northeast</option>
+                </select>
+            </label>
+
+            <label for="children">Do you have more than two children ? :
+      
+                <select name="children">
+                  <option value="">(select one)</option>
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                </select>
+            </label>
+          </fieldset>
+          <div style="clear:both;"></div>
+          <input type="submit" value="Calculate Premium" />
+        </form>
+  
+</body>
+
+</html>
