@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  training:
+    cmd: python src/HealthInsurancePremiumPrediction/pipelines/training_pipeline.py
+    deps:
+    - path: src/HealthInsurancePremiumPrediction/components/data_ingestion.py
+      hash: md5
+      md5: 2e72235b87ae5474f4dcbb73e328d8d4
+      size: 2264
+    - path: src/HealthInsurancePremiumPrediction/components/data_transformation.py
+      hash: md5
+      md5: 42ebcd87e935073e15e4af9ee65214ee
+      size: 3922
+    - path: src/HealthInsurancePremiumPrediction/components/model_evaluation.py
+      hash: md5
+      md5: 6d251431723390a7cabee436b0fe3f58
+      size: 2190
+    - path: src/HealthInsurancePremiumPrediction/components/model_trainer.py
+      hash: md5
+      md5: d092762db21b0ff705fd147daec610dc
+      size: 3721
+    - path: src/HealthInsurancePremiumPrediction/pipelines/training_pipeline.py
+      hash: md5
+      md5: 40c1769433073be3b66d53b1338fc6b5
+      size: 994
+    outs:
+    - path: artifacts/model.pkl
+      hash: md5
+      md5: 2e7f6037ff4e45c63d0c054d364870c7
+      size: 43642
+    - path: artifacts/preprocessor.pkl
+      hash: md5
+      md5: 7b66f0389616dde28868e6bc1bf8fb0c
+      size: 2163
+    - path: artifacts/raw.csv
+      hash: md5
+      md5: f4fb537c6ffbf0b528efb87c1de67b36
+      size: 93102
+    - path: artifacts/test.csv
+      hash: md5
+      md5: 2040547eef32048884db2e4167fb87c2
+      size: 28000
+    - path: artifacts/train.csv
+      hash: md5
+      md5: a712fab9b9dc5c1843e5cff534625d01
+      size: 65162

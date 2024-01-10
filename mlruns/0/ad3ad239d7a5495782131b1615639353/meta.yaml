@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Predict_Health_Insurance_Premium/mlruns/0/ad3ad239d7a5495782131b1615639353/artifacts
+end_time: 1704906050521
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ad3ad239d7a5495782131b1615639353
+run_name: luminous-seal-975
+run_uuid: ad3ad239d7a5495782131b1615639353
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704906033930
+status: 3
+tags: []
+user_id: yashm

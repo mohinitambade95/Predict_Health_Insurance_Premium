@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Predict_Health_Insurance_Premium/mlruns/0/8308c46d56a5499e89d96e1937fca532/artifacts
+end_time: 1704906239366
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8308c46d56a5499e89d96e1937fca532
+run_name: marvelous-fawn-487
+run_uuid: 8308c46d56a5499e89d96e1937fca532
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704906232390
+status: 3
+tags: []
+user_id: yashm
