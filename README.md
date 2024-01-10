@@ -1,45 +1,22 @@
-Project to predict Health Insurance Premium
-1. Initializ a git repository
-2. Create readme.md and .gitignore file.
-3. Add linsense
-4. Create init_setup.sh
-5. execute init_setup.sh commad - bash init_setup.sh (create project env)
-6. Create template.py (Python script to create project structure)
-8. Create setup.py file
-7. To install local packages -- pip install . or include -e . in the requirements.txt file or install local packages from setup.py -- python setup.py install
+<h1> Health Insurance Premium Prediction </h1>
+<h2> Problem Statement </h2>
+The goal of this project is to give people an estimate of how much they need based on
+their individual health situation. After that, customers can work with any health 
+insurance carrier and its plans and perks while keeping the projected cost from our 
+study in mind. This can assist a person in concentrating on the health side of an 
+insurance policy rather han the ineffective part.
 
-Project structure
-Components of pipelines :
-1. data ingestion
-2. EDA
-3. Feature engineering
-4. Model building
-5. evaluation
+<h2> Project Demo Link </h2>
 
-Pipelines (Collection of components):
-1. Training Pipeline
-2. Prediction Pipeline
+<h2> Deployed App Link </h2>
 
-Other files:
-1. Logger file (to log every information about execution)
-2. exception file
-3. Utils file
-4. setup.py -- to install local packages
-5. requirement.txt
+<h2> Data </h2>
+Get the data from https://www.kaggle.com/datasets/noordeen/insurance-premium-prediction
+<h2> Project Flow </h2>
 
-Other folders
-1. Create .github folder under root directory.
-   .github --> workflow -> main.yaml file  (Used for CI/CD pipeline), .gitkeep file (allow us to push empty folder to git )
-2. Notebooks
-3. src / projectName 
-         / Components [dataingestion.py preprocessing.py, modeltraining.py]
-         / Pipelines [training.py, prediction.py]
-         / exeception.py
-         / logger.py
-         / utils.
-4. create __init__.py file inside each folder (src,projectName,components,pipeline) to make it a local package
+![architechture](https://github.com/mohinitambade95/Predict_Health_Insurance_Premium/assets/32614334/9dea3a93-f786-44c4-8735-6789da54e438)
 
-
-
-
-                    
+<h2> Programming Language used </h2>
+Python 3.8
+<h2> Python Libraries and tools Used </h2>
+GIT numpy pandas
