@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Predict_Health_Insurance_Premium/mlruns/0/d3068968c9084483ac8dfc3812018f2a/artifacts
+end_time: 1705947238928
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d3068968c9084483ac8dfc3812018f2a
+run_name: legendary-mole-210
+run_uuid: d3068968c9084483ac8dfc3812018f2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1705947229156
+status: 4
+tags: []
+user_id: Lenovo
