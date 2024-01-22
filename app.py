@@ -26,7 +26,7 @@ def predict_datapoint():
         )
 
         final_data=data.get_data_as_dataframe()
-        logging.info("test dataframe is\n",final_data)
+        #logging.info("test dataframe is\n",final_data)
         predict_pipeline = PredictPipeline()
         pred = predict_pipeline.predict(final_data)
         result = round(pred[0],2)
