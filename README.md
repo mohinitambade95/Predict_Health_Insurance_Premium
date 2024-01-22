@@ -1,5 +1,5 @@
 <h1> Health Insurance Premium Prediction </h1>
-<h2> Problem Statement </h2>
+<h2> Problem Statement</h2>
 The goal of this project is to give people an estimate of how much they need based on
 their individual health situation. After that, customers can work with any health 
 insurance carrier and its plans and perks while keeping the projected cost from our 
