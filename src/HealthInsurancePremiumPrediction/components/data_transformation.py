@@ -25,8 +25,8 @@ class DataTransformation:
     def get_data_transformation(self):
         try:
             logging.info('Data Transformation initiated')
-            cat_cols = ['sex', 'children', 'smoker', 'region']
-            num_cols = ['age', 'bmi']
+            cat_cols = ['sex', 'smoker', 'region']
+            num_cols = ['age', 'bmi','children']
 
             logging.info('Data Transformation pipeline initiated')
 

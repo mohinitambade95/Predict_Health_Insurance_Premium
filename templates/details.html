@@ -141,14 +141,17 @@ footer {
                 </select>
             </label>
 
-            <label for="children">Do you have more than two children ? :
+            <label for="children">Input number of children:
+              <input type="number" name="children" min="1" max="10" /></label>
+
+            <!--<label for="children">Do you have more than two children ? :
       
                 <select name="children">
                   <option value="">(select one)</option>
                   <option value="yes">yes</option>
                   <option value="no">no</option>
                 </select>
-            </label>
+            </label>-->
           </fieldset>
           <div style="clear:both;"></div>
           <input type="submit" value="Predict Premium" />

@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Predict_Health_Insurance_Premium/mlruns/0/e359f0c7a9ff41ccbd3127b462d8341e/artifacts
+end_time: 1706441268486
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e359f0c7a9ff41ccbd3127b462d8341e
+run_name: righteous-bug-628
+run_uuid: e359f0c7a9ff41ccbd3127b462d8341e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706441262928
+status: 3
+tags: []
+user_id: Lenovo
