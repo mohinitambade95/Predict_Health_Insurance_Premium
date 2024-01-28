@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/ML_Projects/Predict_Health_Insurance_Premium/mlruns/0/828c7a05714e4f30a582aacc248f8ccd/artifacts
+end_time: 1706438596769
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 828c7a05714e4f30a582aacc248f8ccd
+run_name: amazing-sloth-773
+run_uuid: 828c7a05714e4f30a582aacc248f8ccd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1706438591001
+status: 3
+tags: []
+user_id: Lenovo

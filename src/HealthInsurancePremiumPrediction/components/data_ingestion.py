@@ -24,7 +24,7 @@ class DataIngestion:
 
         try:
             #data = pd.read_csv(Path(os.path.join("notebooks/data", "data_preprocessed.csv")))
-            database_name = 'Insurance'
+            database_name = 'mydatabase'
             collection_name = 'PreprocessedData'
             data = get_data_from_db(database_name,collection_name)
             print("Shape of data",data.shape)

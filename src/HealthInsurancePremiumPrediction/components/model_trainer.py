@@ -54,7 +54,6 @@ class ModelTrainer:
                     'alpha': [0.1,0.5,1,1.5,2]
                 },
                 "DecisionTree Regressor" : {
-                    'n_estimators': [10,20,30,40,50],
                     'max_depth' : [4,6,8,9,10,12],
                     
                 },
