@@ -54,9 +54,9 @@ class ModelTrainer:
                     'alpha': [0.1,0.5,1,1.5,2]
                 },
                 "DecisionTree Regressor" : {
-                    'max_features': ["sqrt", "log2"],
-                    'max_depth' : [8,9,10,12],
-                    'min_samples_split' : [2,4,6,8]
+                    'n_estimators': [10,20,30,40,50],
+                    'max_depth' : [4,6,8,9,10,12],
+                    
                 },
                 "RandomForest Regressor" : {
                     'n_estimators': [10,20,30,50,80,100],
@@ -64,7 +64,7 @@ class ModelTrainer:
                 },
                 "GradientBoosting Regressor" : {
                     'n_estimators': [10,20,30,50,100],
-                    #'learning_rate' : [0.01,0.05,0.1,0.5,1
+                    'learning_rate' : [0.01,0.05,0.1,0.5,1]
                 }
 
             }

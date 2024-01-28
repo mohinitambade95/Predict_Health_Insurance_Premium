@@ -60,6 +60,3 @@ class DataIngestion:
            logging.info("exception occured during data ingestion")
            raise customexception(e,sys)
 
-if __name__ == "__main__":
-    ds = DataIngestion()
-    t,r=ds.initiate_data_ingestion()
