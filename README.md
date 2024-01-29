@@ -1,13 +1,11 @@
 <h1> Health Insurance Premium Prediction </h1>
 <h2> Problem Statement</h2>
-The goal of this project is to give people an estimate of how much they need based on
-their individual health situation. After that, customers can work with any health 
-insurance carrier and its plans and perks while keeping the projected cost from our 
-study in mind. This can assist a person in concentrating on the health side of an 
-insurance policy rather han the ineffective part.
+The Insurance Premium prediction project aims to leverage machine learning algorithms to predict the health insurance premium. 
+The goal of this project is to give people an estimate of how much they need based on their individual health situation. After that, customers can work with any health insurance carrier and its plans and perks while keeping the projected cost from our study in mind. This can assist a person in concentrating on the health side of an insurance policy rather than the ineffective part.
+
 
 <h2> Project Demo Link </h2>
-Checkout the project demo at  https://drive.google.com/file/d/1HYv8-1xqXzbn9Qwd9gLls2w2CmbYtBgR/view?usp=sharing
+Checkout the project demo at https://drive.google.com/file/d/1HNTcZ-eTq_2GpukDmht6rBxv1YG6vHkO/view?usp=sharing
 <h2> Deployed App Link </h2>
 Access the deployed application at
 https://ja3mktausj.ap-south-1.awsapprunner.com
