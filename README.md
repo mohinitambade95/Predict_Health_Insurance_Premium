@@ -20,7 +20,7 @@ Python 3.8
 <h2> Python Libraries and tools Used </h2>
 GIT numpy pandas
 <h2> Project Setup </h2>
-<h4> Clone the Project <h4>
+<h4> Clone the Project </h4>
   
   ```
   git clone https://github.com/mohinitambade95/Predict_Health_Insurance_Premium.git
@@ -57,6 +57,10 @@ GIT numpy pandas
   mlflow ui
   ```
 
+<h2> Results </h2>
+  
+  Gradient Boosting Regressor emerged as a best model with R2 score of 0.86 on test dataset.
+  
 <h2> CI/CD Pipeline </h2>
 
  The CI/CD pipeline is created using github actions to automate the project deployment.
