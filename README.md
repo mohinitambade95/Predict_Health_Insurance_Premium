@@ -59,13 +59,9 @@ GIT numpy pandas
   mlflow ui
   ```
 
-<h2> MLOps and CI/CD Pipeline </h2>
+<h2> CI/CD Pipeline </h2>
 
- Implementing MLOps ensures a seamless and automated machine learning lifecycle. Continuous Integration and Continuous Deployment (CI/CD) pipelines automate testing, model training, and deployment processes.
-
- DAGs Hub: DAGs Hub is used to orchestrate and automate workflows. View and manage your Directed Acyclic Graphs (DAGs) with DAGs Hub.
-
- CI/CD Pipeline: The CI/CD pipeline is set up to automatically trigger testing, model training, and deployment steps on each code push.
+ The CI/CD pipeline is created using github actions to automate the project deployment.
 
 <h2> AWS Deployment </h2>
 Delpoyed the application on AWS App Runner to ensure scalability and accessibility of application.
